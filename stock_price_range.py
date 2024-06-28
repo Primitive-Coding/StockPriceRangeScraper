@@ -22,7 +22,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class StockPriceYearRange:
+class StockPriceRange:
     def __init__(self, ticker: str) -> None:
         self.ticker = ticker.upper()
 
@@ -121,7 +121,7 @@ class StockPriceYearRange:
 
 if __name__ == "__main__":
 
-    sp = StockPriceYearRange("AMZN")
+    sp = StockPriceRange("AMZN")
 
     prices = sp.get_period_prices("2024-01-01", "2024-03-31")
     volume = sp.get_period_volume("2024-01-01", "2024-03-31")
