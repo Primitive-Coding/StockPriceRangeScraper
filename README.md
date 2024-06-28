@@ -16,7 +16,7 @@
 - Create a class instance.
 
 ```
-    sp = StockPriceYearRange("AMZN")
+    sp = StockPriceRange("AMZN")
 ```
 
 ###### get_period_prices(str, str)
